@@ -1,0 +1,5 @@
+{
+  "name": "Nexus LLM",
+  "description": "A research assistant that transforms your documents into insights, audio overviews, and focused answers.",
+  "requestFramePermissions": []
+}

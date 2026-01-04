@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexus LLM</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif'],
+            },
+            colors: {
+              nexus: {
+                50: '#f8faff',
+                100: '#eef4ff',
+                200: '#dde9ff',
+                300: '#c5dbff',
+                400: '#a3c7ff',
+                500: '#7aaeff',
+                600: '#538bff',
+                700: '#3d6ef8',
+                800: '#2651d6',
+                900: '#2344a8',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for a cleaner look */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+      /* Prose adjustments */
+      .prose {
+        max-width: 65ch;
+      }
+      .prose p {
+        margin-bottom: 1.25em;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react-markdown": "https://esm.sh/react-markdown@^9.0.1",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "remark-math": "https://esm.sh/remark-math@^6.0.0",
+    "rehype-katex": "https://esm.sh/rehype-katex@^7.0.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-50 text-slate-900 font-sans antialiased h-screen overflow-hidden">
+    <div id="root" class="h-full"></div>
+  </body>
+</html>
